@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Task 4</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      #main-container {
+        width: 800px;
+        margin: 20px auto;
+        border: 1px solid #b0c4de;
+        background-color: #ffffff;
+        padding: 15px;
+      }
+
+      #header {
+        text-align: center;
+        padding: 10px;
+        border-bottom: 2px solid #0056b3;
+        margin-bottom: 20px;
+      }
+
+      #header h1 {
+        font-weight: bold;
+        color: #0056b3;
+      }
+
+      #sidebar {
+        width: 200px;
+        float: left;
+        border: 1px solid #0056b3;
+        background-color: #e6f7ff;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        margin-right: 20px;
+      }
+
+      #sidebar ul li a {
+        text-decoration: none;
+        color: #0056b3;
+      }
+
+      #entries {
+        width: 530px;
+        float: left;
+      }
+
+      .journal-entry {
+        border: 1px solid #ccc;
+        padding: 15px;
+        margin-bottom: 20px;
+        background-color: #fafafa;
+      }
+
+      .journal-entry img {
+        float: right;
+        width: 150px;
+        height: 150px;
+        border: 1px solid #ddd;
+        margin-left: 15px;
+      }
+
+      .journal-entry h3 {
+        margin-bottom: 10px;
+      }
+
+      .entry-date {
+        font-weight: bold;
+        color: #005a9c;
+      }
+
+      #footer {
+        text-align: center;
+        padding: 10px;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="main-container">
+      <div id="header">
+        <h1>A Student's Journal</h1>
+        <p>Notes from my first semester</p>
+      </div>
+
+      <div id="sidebar">
+        <h2>Quick Links</h2>
+        <ul>
+          <li><a href="#course-notes">Course Notes</a></li>
+          <li><a href="#assignments">Assignments</a></li>
+          <li><a href="#project-ideas">Project Ideas</a></li>
+        </ul>
+      </div>
+
+      <div id="entries">
+        <div class="journal-entry">
+          <img
+            src="https://images.unsplash.com/photo-1635775017492-1eb935a082a4?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1740"
+            alt="C++ Code"
+          />
+          <h3>
+            <span class="entry-date">October 15, 2025:</span> Programming Fun
+          </h3>
+          <p>
+            Today in Programming Fundamentals, we finally started working with
+            arrays. It was a bit confusing at first, but after a few exercises,
+            it started to make sense. I used an array to build a simple seating
+            chart generator. It feels great when the code finally runs without
+            errors!
+          </p>
+        </div>
+
+        <div class="journal-entry">
+          <img
+            src="https://images.unsplash.com/photo-1754304342696-7c253db44456?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGh5c2ljcyUyMGRpYWdyYW0lMjBsYXclMjBvZiUyMG1vdGlvbnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&q=60&w=500"
+            alt="Physics Diagram"
+          />
+          <h3>
+            <span class="entry-date">October 12, 2025:</span> Applied Physics
+          </h3>
+          <p>
+            The lecture on Newton's Laws of Motion was really interesting. It's
+            amazing how a few simple rules can describe so much about the world
+            around us. The concept of action-reaction is something I see
+            everywhere now. The lab experiment was also pretty cool.
+          </p>
+        </div>
+      </div>
+
+      <div id="footer">
+        <p>&copy; 2025 My Journal</p>
+      </div>
+    </div>
+  </body>
+</html>
